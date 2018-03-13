@@ -157,7 +157,7 @@ archivePrefix = "arXiv",
     ),
     _Publication(
         "The Third Dialog State Tracking Challenge",
-        "Matthew Henderson, Blaise Thomson and Jason Williams",
+        "Matthew Henderson, Blaise Thomson, and Jason Williams",
         "2014",
         """
         The Third Dialog State Tracking Challenge, with 7 research teams submitting 26 total entries,
@@ -176,7 +176,7 @@ archivePrefix = "arXiv",
     ),
     _Publication(
         "Robust Dialog State Tracking Using Delexicalised Recurrent Neural Networks and Unsupervised Adaptation",
-        "Matthew Henderson, Blaise Thomson and Steve Young",
+        "Matthew Henderson, Blaise Thomson, and Steve Young",
         "2014",
         """
         This paper presents a method to robustly transfer recurrent neural networks from one
@@ -196,7 +196,7 @@ archivePrefix = "arXiv",
     ),
     _Publication(
         "The Second Dialog State Tracking Challenge",
-        "Matthew Henderson, Blaise Thomson and Jason Williams",
+        "Matthew Henderson, Blaise Thomson, and Jason Williams",
         "2014",
         """
         This paper presents the results of the Second Dialog State Tracking Challenge,
@@ -216,7 +216,7 @@ archivePrefix = "arXiv",
     ),
     _Publication(
         "Word-based Dialog State Tracking with Recurrent Neural Networks",
-        "Matthew Henderson, Blaise Thomson and Steve Young",
+        "Matthew Henderson, Blaise Thomson, and Steve Young",
         "2014",
         """
         This paper presents a new method for dialog state tracking that relies directly
@@ -236,7 +236,7 @@ archivePrefix = "arXiv",
     ),
     _Publication(
         "Deep Neural Network Approach for the Dialog State Tracking Challenge",
-        "Matthew Henderson, Blaise Thomson and Steve Young",
+        "Matthew Henderson, Blaise Thomson, and Steve Young",
         "2013",
         """
         Inspired by recent promising results using Deep Neural Networks in speech applications,
@@ -255,7 +255,7 @@ archivePrefix = "arXiv",
     ),
     _Publication(
         "Discriminative Spoken Language Understanding Using Word Confusion Networks",
-        "Matthew Henderson, Milica Gašić, Blaise Thomson, Pirros Tsiakoulis, Kai Yu and Steve Young",
+        "Matthew Henderson, Milica Gašić, Blaise Thomson, Pirros Tsiakoulis, Kai Yu, and Steve Young",
         "2012",
         """
         This paper presents a new form of semantic decoding which uses the entire
@@ -276,7 +276,7 @@ archivePrefix = "arXiv",
     ),
     _Publication(
         "Recovering from Non-Understanding Errors in a Conversational Dialogue System",
-        "Matthew Henderson, Colin Matheson and Jon Oberlander",
+        "Matthew Henderson, Colin Matheson, and Jon Oberlander",
         "2012",
         """
         A paper stemming from work done in my MSc evaluating a set of strategies a conversational
