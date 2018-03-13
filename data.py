@@ -12,7 +12,7 @@ POSITIONS = [
         "Lead Scientist & Head of PolyAI Pacific", "Singapore",
         "Jan 2018 - present",
         (
-            "Head of the Singapore office, building a team",
+            "Head of the Singapore office",
             "Building a scalable machine learning platform for conversational agents",
         )),
     _Position(
