@@ -43,6 +43,9 @@ def _main():
         TEMPLATE_DIRS=[template_dir],
         TEMPLATE_LOADERS=('django.template.loaders.filesystem.Loader',),)
     _create_index()
+    logging.info(
+        "Push changes by running:\n "
+        "git subtree push --prefix gh-pages origin gh-pages")
 
 
 if __name__ == "__main__":
