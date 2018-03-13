@@ -2711,6 +2711,9 @@
 	#titleBar {
 		display: none;
 	}
+	.mobile_only {
+		display: none;
+	}
 
 	@media screen and (max-width: 1024px) {
 
@@ -2875,6 +2878,9 @@
 				-ms-transform: translateX(0);
 				transform: translateX(0);
 			}
+			.mobile_only {
+				display: block;
+			}
 
 	}
 
@@ -3023,6 +3029,10 @@
 				transform: translateX(-17em);
 			}
 
+			.mobile_only {
+				display: block;
+			}
+
 	}
 
 /* XSmall */
@@ -3087,4 +3097,7 @@
 				padding: 0;
 			}
 
+			.mobile_only {
+				display: block;
+			}
 	}
