@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Matthew Henderson</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<meta name="robots" content="index, follow" />
+    <meta name="description" content="Matthew Henderson, machine learning for conversational natural language understanding." />
+		<link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
+	</head>
+	<body>
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar">
+						<img src="assets/images/matthew_henderson.jpeg" alt="Matthew Henderson" />
+					</span>
+					<h1 id="logo"><a href="#">Matthew Henderson</a></h1>
+					<p>machine learning for conversational natural language understanding</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="#one" class="active">Me</a></li>
+						<li><a href="#two">Experience</a></li>
+						<li><a href="#three">Selected Publications</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/matt-henderson-9a10b125/" class="icon fa-linkedin" title="Linkedin" target="_blank"><span class="label">Linkedin</span></a></li>
+						<li><a id="email" target="_blank" class="icon fa-envelope" title="Email me"><span class="label">Email</span></a></li>
+						<li><a href="https://scholar.google.com.sg/citations?user=DW46Mr4AAAAJ&hl=en" class="icon fa-graduation-cap" title="Google Scholar" target="_blank"><span class="label">Twitter</span></a></li>
+						<li><a href="http://blog.matthen.com" class="icon fa-tumblr" title="My blog" target="_blank"><span class="label">Tumblr</span></a></li>
+						<li><a href="https://twitter.com/matthen2" class="icon fa-twitter" title="Twitter" target="_blank"><span class="label">Twitter</span></a></li>
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="container">
+									<p>
+										Building conversational machines, with a focus on meaningful
+										statistical evaluations. Inventing machine learning methods
+										to push the state-of-the art.
+									</p>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two">
+								<div class="container">
+									<h3>Experience</h3>
+									<div class="features">
+										{% for position in positions %}
+										<article>
+											<span class="image">
+												<a href="{{position.link}}" target="_blank" title="{{position.company}}">
+													<img src="assets/images/{{position.image}}" alt="{{position.company}}" />
+												</a>
+											</span>
+											<div class="inner">
+												<header>
+													<h4>{{position.company}}</h4>
+													<p>{{position.title}}<br />
+														{% if position.location %}
+															{{position.location}},
+														{% endif %}
+														{{position.date}}</p>
+												</header>
+												<ul class="alt">
+												{% for bullet in position.bullets %}
+													<li>{{bullet|safe}}</li>
+												{% endfor %}
+												</ul>
+											</div>
+										</article>
+										{% endfor %}
+										<section>
+											<p>
+												I have an
+												<a href="http://www.lel.ed.ac.uk/lel_students/postgraduate/speech_and_language_processing/index.php" target="_blank">MSc in Speech and Language
+													Processing</a> from the University of Edinburgh,
+												and an MA in Mathematics from the University of Cambridge.
+											</p>
+									</section>
+								</div>
+							</section>
+
+						<!-- Three -->
+							<section id="three">
+
+								<div class="container">
+
+									<h3>Selected Publications</h3>
+									<p>
+										For a full list, please see my
+										<a href="https://scholar.google.com.sg/citations?user=DW46Mr4AAAAJ&hl=en" title="Google Scholar" target="_blank">Google Scholar</a>
+										profile.
+									</p>
+									{% for publication in publications %}
+									<section>
+										<header>
+											<h4>{{publication.title}}</h4>
+											<p>{{publication.subtitle}}<br />{{publication.date}}</p>
+										</header>
+										<p>
+											{{publication.description|safe}}
+										</p>
+										<ul class="actions">
+											<li><a href="{{publication.pdf}}"
+													   target="_blank" class="button special icon fa-download">PDF</a></li>
+											<li><a href="#" class="cite button special icon fa-graduation-cap">Cite</a></li>
+										</ul>
+										<pre style="display:none"><code>{{publication.bibtex.strip}}</code></pre>
+
+									</section>
+									{% endfor %}
+
+
+								</div>
+							</section>
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Matthew Henderson. All rights reserved.</li>
+								<li>Template: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script type="text/javascript">
+				// Obfuscated code to add my email address to the page.
+				document.getElementById("email").href="mailto:matt@matthen.com";
+				$(".cite").each(function() {
+					$(this).click(function(e) {
+						console.log("clicked");
+						e.preventDefault();
+						$(this).parent().parent().siblings("pre").slideToggle(500).select();
+					});;
+				});
+			</script>
+
+	</body>
+</html>
