@@ -62,7 +62,7 @@ POSITIONS = [
             """,
             """
             Contributed to VocalIQ,
-            <a href="http://www.wsj.com/articles/apple-acquires-artificial-intelligence-startup-vocaliq-1443815801" target="_blank">later acquired by Apple</a>.
+            <a href="http://www.wsj.com/articles/apple-acquires-artificial-intelligence-startup-vocaliq-1443815801" target="_blank">later acquired by Apple</a>
             """)),
 ]
 
