@@ -2,7 +2,6 @@
 
 from collections import namedtuple
 
-
 _Position = namedtuple(
     "Experience", ["image", "company", "link", "title", "location", "date", "bullets"])
 
@@ -29,7 +28,8 @@ POSITIONS = [
         )),
     _Position(
         "google.jpg", "Google", "https://research.google.com/pubs/MatthewHenderson.html",
-        "Senior Software Engineer", "Mountain View, California", "Mar 2015 - June 2017",
+        "Senior Software Engineer", "Mountain View, California (on O1 visa)",
+        "Mar 2015 - June 2017",
         (
             "Lead researcher behind Smart Reply in Gmail",
             "Tech lead on "
