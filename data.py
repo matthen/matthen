@@ -3,7 +3,8 @@
 from collections import namedtuple
 
 _Position = namedtuple(
-    "Experience", ["image", "company", "link", "title", "location", "date", "bullets"])
+    "Experience", ["image", "company", "link", "title", "location",
+                   "date", "bullets"])
 
 POSITIONS = [
     _Position(
@@ -31,10 +32,13 @@ POSITIONS = [
         "Senior Software Engineer", "Mountain View, California (on O1 visa)",
         "Mar 2015 - June 2017",
         (
-            "Lead researcher behind Smart Reply in Gmail",
+            "Lead researcher behind "
+            "<a href=\"https://arxiv.org/abs/1705.00652\" target=\"_blank\">"
+            "Smart Reply in Gmail</a>",
             "Tech lead on "
             "<a href=\"https://en.wikipedia.org/wiki/Ray_Kurzweil\" target=\"_blank\">Ray Kurzweil's</a>"
             " natural language understanding & dialog research team in Mountain View California",
+            "Inventor on three patents",
             "Worked for first 6 months in London on text-to-speech research team with "
             "<a href=\"https://research.google.com/pubs/HeigaZen.html\" target=\"_blank\">Heiga Zen</a>"
 
