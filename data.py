@@ -85,7 +85,7 @@ PUBLICATIONS = [
         A collection of large datasets for Conversational AI, with hundreds of
         millions of examples, and a standardised evaluation framework.
         """,
-        "https://arxiv.org/abs/1904.06472",
+        "assets/pdf/A_Repository_of_Conversational_Datasets.pdf",
         """
 @inproceedings{Henderson2019,
     author      = {Matthew Henderson and Pawe{\l} Budzianowski and I{\~{n}}igo Casanueva and Sam Coope and Daniela Gerz and Girish Kumar and Nikola Mrk{\v{s}}i\'c and Georgios Spithourakis and Pei-Hao Su and Ivan Vulic and Tsung-Hsien Wen},
