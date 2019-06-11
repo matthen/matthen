@@ -112,7 +112,7 @@ PUBLICATIONS = [
         "assets/pdf/Training_Neural_Response_Selection_for_Task_Oriented_Dialogue_Systems.pdf",
         """
 @inproceedings{Henderson2019b,
-    author      = {Matthew Henderson and Ivan Vuli\'c and Daniela Gerz and I{\~{n}}igo Casanueva and Pawe{\l} Budzianowski and Sam Coope and Georgios Spithourakis and Tsung-Hsien Wen and Nikola Mrk{\v{s}}i\'c and  and Pei-Hao Su},
+    author      = {Matthew Henderson and Ivan Vuli\'c and Daniela Gerz and I{\~{n}}igo Casanueva and Pawe{\l} Budzianowski and Sam Coope and Georgios Spithourakis and Tsung-Hsien Wen and Nikola Mrk{\v{s}}i\'c and Pei-Hao Su},
     title       = {Training Neural Response Selection for Task-Oriented Dialogue Systems},
     year        = {2019},
     month       = {jul},
