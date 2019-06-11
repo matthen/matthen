@@ -79,7 +79,7 @@ PUBLICATIONS = [
         "A Repository of Conversational Datasets",
         "Matthew Henderson, Paweł Budzianowski, Iñigo Casanueva, Sam Coope, "
         "Daniela Gerz, Girish Kumar, Nikola Mrkšić, Georgios Spithourakis, "
-        "Pei-Hao Su, Ivan Vulic, and Tsung-Hsien Wen",
+        "Pei-Hao Su, Ivan Vulić, and Tsung-Hsien Wen",
         "2019",
         """
         A collection of large datasets for Conversational AI, with hundreds of
@@ -88,13 +88,36 @@ PUBLICATIONS = [
         "assets/pdf/A_Repository_of_Conversational_Datasets.pdf",
         """
 @inproceedings{Henderson2019,
-    author      = {Matthew Henderson and Pawe{\l} Budzianowski and I{\~{n}}igo Casanueva and Sam Coope and Daniela Gerz and Girish Kumar and Nikola Mrk{\v{s}}i\'c and Georgios Spithourakis and Pei-Hao Su and Ivan Vulic and Tsung-Hsien Wen},
+    author      = {Matthew Henderson and Pawe{\l} Budzianowski and I{\~{n}}igo Casanueva and Sam Coope and Daniela Gerz and Girish Kumar and Nikola Mrk{\v{s}}i\'c and Georgios Spithourakis and Pei-Hao Su and Ivan Vuli\'c and Tsung-Hsien Wen},
     title       = {A Repository of Conversational Datasets},
     year        = {2019},
     month       = {jul},
     note        = {Data available at github.com/PolyAI-LDN/conversational-datasets},
     url         = {https://arxiv.org/abs/1904.06472},
     booktitle   = {Proceedings of the Workshop on {NLP} for Conversational {AI}},
+}
+        """
+    ),
+    _Publication(
+        "Training Neural Response Selection for Task-Oriented Dialogue Systems",
+        "Matthew Henderson, Ivan Vulić, Daniela Gerz, "
+        "Iñigo Casanueva, Paweł Budzianowski, Sam Coope, Georgios Spithourakis, "
+        "Tsung-Hsien Wen, Nikola Mrkšić, and Pei-Hao Su",
+        "2019",
+        """
+        An evaluation of fine-tuning techniques for adapting large neural response
+        selection models, trained on large datasets like Reddit, to task-oriented
+        dialogue domains.
+        """,
+        "assets/pdf/Training_Neural_Response_Selection_for_Task_Oriented_Dialogue_Systems.pdf",
+        """
+@inproceedings{Henderson2019b,
+    author      = {Matthew Henderson and Ivan Vuli\'c and Daniela Gerz and I{\~{n}}igo Casanueva and Pawe{\l} Budzianowski and Sam Coope and Georgios Spithourakis and Tsung-Hsien Wen and Nikola Mrk{\v{s}}i\'c and  and Pei-Hao Su},
+    title       = {Training Neural Response Selection for Task-Oriented Dialogue Systems},
+    year        = {2019},
+    month       = {jul},
+    url         = {https://arxiv.org/abs/1906.01543},
+    booktitle   = {Proceedings of ACL},
 }
         """
     ),
