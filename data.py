@@ -1,19 +1,26 @@
 """Data to populate the webpage with."""  # flake8: noqa
 
-from collections import namedtuple
+from typing import List, NamedTuple
 
-_Position = namedtuple(
-    "Experience", ["image", "company", "link", "title", "location",
-                   "date", "bullets"])
+
+class _Position(NamedTuple):
+    image: str
+    company: str
+    link: str
+    title: str
+    location: str
+    date: str
+    bullets: List[str]
+
 
 POSITIONS = [
     _Position(
         "polyai.jpg", "PolyAI", "http://www.poly-ai.com/",
-        "Lead Scientist & Head of PolyAI Pacific", "Singapore",
+        "VP of Research", "Singapore",
         "Jan 2018 - present",
         (
-            "Head of the Singapore office",
-            "Building a scalable machine learning platform for conversational agents",
+            "Leading research",
+            "Building a scalable machine learning platform for conversational agents, applied to customer service",
         )),
     _Position(
         "carousell.jpg", "Carousell", "http://careers.carousell.com/about/",
@@ -71,10 +78,83 @@ POSITIONS = [
 ]
 
 
-_Publication = namedtuple(
-    "Publication", ["title", "subtitle", "date", "description", "pdf", "bibtex"])
+class _Publication(NamedTuple):
+    title: str
+    subtitle: str
+    date: str
+    description: str
+    pdf: str
+    bibtex: str
+
 
 PUBLICATIONS = [
+    _Publication(
+        "ConVEx: Data-Efficient and Few-Shot Slot Labeling",
+        "Matthew Henderson and Ivan Vulić",
+        "2020",
+        """
+        Slot labeling framework that achieves a new leap in performance for few-shot slot labeling.
+        Introduces a new pretraining task, pairwise cloze, that allows pre-training all sequence-level layers.
+        """,
+        "assets/pdf/ConVEx_Fewshot_Slot_Labelling.pdf",
+        """
+@article{Henderson2020b,
+   author = {Matthew Henderson and Ivan Vuli\'c},
+    title = "{ConVEx: Data-Efficient and Few-Shot Slot Labeling}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {2010.11791},
+ primaryClass = "cs.CL",
+     year = 2020,
+    month = october,
+    url = {https://arxiv.org/abs/2010.11791}
+}
+        """),
+    _Publication(
+        "ConveRT: Efficient and Accurate Conversational Representations from Transformers",
+        "Matthew Henderson, Iñigo Casanueva, Nikola Mrkšić, "
+        "Pei-Hao Su, Tsung-Hsien Wen, and Ivan Vulić",
+        "2020",
+        """
+        A highly-optimized transformer architecture, pre-trained on response selection.
+        ConveRT achieves state-of-the-art performance across widely established response
+        selection and intent classification tasks.
+        """,
+        "assets/pdf/ConveRT_Conversational_Transformer.pdf",
+        """
+@inproceedings{Henderson2020a,
+    author      = {Matthew Henderson and I{\~{n}}igo Casanueva and  Nikola Mrk{\v{s}}i\'c and Pei-Hao Su and Tsung-Hsien Wen and Ivan Vuli\'c},
+    title       = {A Repository of Conversational Datasets},
+    year        = {2020},
+    url         = {https://arxiv.org/abs/1911.03688},
+    booktitle   = {Findings of {EMNLP}},
+}
+        """
+    ),
+    _Publication(
+        "Efficient Intent Detection with Dual Sentence Encoders",
+        "Iñigo Casanueva, Tadas Temcinas, "
+        "Daniela Gerz, Matthew Henderson, and Ivan Vulić",
+        "2019",
+        """
+        An evaluation of dual sentence encoders such as ConveRT on few-shot intent detection tasks.
+        """,
+        "assets/pdf/Fewshot_Intent_Detection.pdf",
+        """
+@inproceedings{Casanueva:2020ws,
+  author    = {I{\~{n}}igo Casanueva and
+               Tadas Temcinas and
+               Daniela Gerz and
+               Matthew Henderson and
+               Ivan Vuli\'c},
+  title     = {Efficient Intent Detection with Dual Sentence Encoders},
+  booktitle   = "Proceedings of the 2nd Workshop on Natural Language Processing for Conversational AI",
+  year      = {2020},
+  url       = {https://arxiv.org/abs/2003.04807},
+  pages = {38--45},
+}
+        """
+    ),
     _Publication(
         "A Repository of Conversational Datasets",
         "Matthew Henderson, Paweł Budzianowski, Iñigo Casanueva, Sam Coope, "
