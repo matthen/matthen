@@ -15,9 +15,16 @@ class _Position(NamedTuple):
 
 POSITIONS = [
     _Position(
+        "apple.jpg", "Apple", "https://machinelearning.apple.com/",
+        "ML Researcher", "Edinburgh",
+        "March 2021 - present",
+        (
+            "Siri natural language understanding.",
+        )),
+    _Position(
         "polyai.jpg", "PolyAI", "http://www.poly-ai.com/",
         "VP of Research", "Singapore",
-        "Jan 2018 - present",
+        "Jan 2018 - Feb 2021",
         (
             "Leading research",
             "Building a scalable machine learning platform for conversational agents, applied to customer service",
