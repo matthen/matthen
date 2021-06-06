@@ -98,23 +98,24 @@ PUBLICATIONS = [
     _Publication(
         "ConVEx: Data-Efficient and Few-Shot Slot Labeling",
         "Matthew Henderson and Ivan Vulić",
-        "2020",
+        "2021",
         """
         Slot labeling framework that achieves a new leap in performance for few-shot slot labeling.
         Introduces a new pretraining task, pairwise cloze, that allows pre-training all sequence-level layers.
         """,
         "assets/pdf/ConVEx_Fewshot_Slot_Labelling.pdf",
         """
-@article{Henderson2020b,
-   author = {Matthew Henderson and Ivan Vuli\'c},
-    title = "{ConVEx: Data-Efficient and Few-Shot Slot Labeling}",
-  journal = {ArXiv e-prints},
-archivePrefix = "arXiv",
-   eprint = {2010.11791},
- primaryClass = "cs.CL",
-     year = 2020,
-    month = october,
-    url = {https://arxiv.org/abs/2010.11791}
+@inproceedings{henderson-vulic-2021-convex,
+    title = "{ConVEx}: Data-Efficient and Few-Shot Slot Labeling",
+    author = "Henderson, Matthew  and
+      Vuli{\'c}, Ivan",
+    booktitle = "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jun,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2021.naacl-main.264",
+    pages = "3375--3389",
 }
         """),
     _Publication(
