@@ -67,11 +67,29 @@
 
         a {
             color: rgb(255, 121, 198);
-            text-decoration-color: rgba(255, 121, 198, 40%);
+            position: relative;
+            text-decoration: none;
         }
 
         a:hover {
             color: #50fa7b;
+        }
+        
+        a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 100%;
+            height: 2px;
+            background-color: currentColor;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+        
+        a:hover::after {
+            transform: scaleX(1);
         }
 
         h1 {
@@ -138,7 +156,7 @@
         <p>
             I am VP of research at <a href="https://poly.ai/about/" target="_blank">PolyAI</a>.
             Previously I was at
-            <a href="https://reka.ai/" target="_blank">reka.ai</a>, <a href="https://machinelearning.apple.com/" target="_blank">Apple</a>, and <a href="https://research.google/pubs/pub46057/" target="_blank">Google</a>.
+            <a href="https://reka.ai/" target="_blank">reka.ai</a>,&nbsp;<a href="https://machinelearning.apple.com/" target="_blank">Apple</a>, and <a href="https://research.google/pubs/pub46057/" target="_blank">Google</a>.
             My PhD was at <a href="https://mi.eng.cam.ac.uk/" target="_blank">Cambridge University</a> on dialogue
             systems.
             I also create mathematical animations.
